@@ -2,7 +2,7 @@
 
 The website was inspired and build on top of this template:
 
-Template Name: Bootslander
-Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Template Name: Bootslander </br>
+Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/ </br>
+Author: BootstrapMade.com </br>
+License: https://bootstrapmade.com/license/ </br>
