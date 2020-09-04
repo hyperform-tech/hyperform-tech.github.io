@@ -686,24 +686,29 @@
                     <div class="map-responsive">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.507640204439!3d37.757814996609724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sro!4v1498231462606" allowfullscreen></iframe>
                     </div>
-                </div> <
+                </div> -->
                 <div class="col-lg-6">
-                    -->
+
                     <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <form name="gform" id="gform" enctype="text/plain" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLScwa_QGsjQ_9dxOgx_50IFHbgRKvdFS9qGYA0dblo11Ctan5g/formResponse?" onsubmit="submitted=true;" data-toggle="validator" data-focus="false">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
+                            <input type="text" name="entry.13857192" class="form-control-input" id="entry.13857192" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
+                            <label class="label-control" for="cname">Your Name</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
+                            <input type="email" class="form-control-input" name="entry.254599107" id="entry.254599107" data-rule="email" data-msg="Please enter a valid email" required/>
+                            <label class="label-control" for="cemail">Your Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
+                            <input type="text" class="form-control-input" name="entry.612964844" id="entry.612964844" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" required/>
+                            <label class="label-control" for="csubject">Subject</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" name="entry.761986280" rows="5" data-msg="Please write something for us"></textarea>
+                            <label class="label-control" for="cmessage">Message</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group checkbox">
@@ -718,9 +723,18 @@
                         </div>
                     </form>
                     <!-- end of contact form -->
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+                    
+                    <script src="js/jquery.min.js"></script>
+                    <script type="text/javascript">var submitted=false;</script>
+                    <script type="text/javascript">
+                    $('#gform').on('submit', function(e) {
+                        $('#gform *').fadeOut(2000);
+                        $('#gform').prepend('Your message has been sent. Thank you!').css({'text-align': 'center', 'padding': '0 0 0 60px', 'font-size': '22px', 'font-weight': '600', 'margin-bottom': '5px', 'padding-top': '25px', 'color': '#010483'});});
+                    </script>
 
                 </div> <!-- end of col -->
-            </div> <!-- end of row -->
+            <!--</div>  end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of form-2 -->
     <!-- end of contact -->
@@ -798,7 +812,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © OurEye.ai - StartUp HTML Landing Page Template by <a href="https://inovatik.com">Inovatik</a></p>
+                    <p class="p-small">Copyright © OurEye.ai</p>
+                    <!-- <p class="p-small">Copyright © OurEye.ai - StartUp HTML Landing Page Template by <a href="https://inovatik.com">Inovatik</a></p> -->
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
