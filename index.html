@@ -1,955 +1,504 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OurEye.Ai - Video Intelligence Reimagined</title>
+    <meta name="description"
+          content="OurEye.Ai reimagines video intelligence for Enterprise monitoring, through the power of camera AI."/>
 
-  <title>OurEye.ai</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+    <!--Inter UI font-->
+    <link href="https://rsms.me/inter/inter-ui.css" rel="stylesheet">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!--vendors styles-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  
-  <!-- Clicky -->
-  <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101274432);</script>
-  <script async src="//static.getclicky.com/js"></script>
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Techie - v2.1.0
-  * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <!-- Bootstrap CSS / Color Scheme -->
+    <link rel="stylesheet" href="css/default.css" id="theme-color">
+    <link rel="icon" href="favicon.ico">
 </head>
-
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+<!--navigation-->
+<section class="smart-scroll">
     <div class="container-fluid">
-
-      <div class="row justify-content-center">
-        <div class="col-xl-9 d-flex align-items-center">
-          <!-- <h1 class="logo mr-auto"><a href="index.html">OurEye.ai</a></h1>-->
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-
-          <nav class="nav-menu d-none d-lg-block">
-            <ul>
-              <li class="active"><a href="#hero">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#demo">Demo</a></li>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#team">Team</a></li>
-              <!--<li class="drop-down"><a href="">Drop Down</a>
-                <ul>
-                  <li><a href="#">Drop Down 1</a></li>
-                  <li class="drop-down"><a href="#">Deep Drop Down</a>
-                    <ul>
-                      <li><a href="#">Deep Drop Down 1</a></li>
-                      <li><a href="#">Deep Drop Down 2</a></li>
-                      <li><a href="#">Deep Drop Down 3</a></li>
-                      <li><a href="#">Deep Drop Down 4</a></li>
-                      <li><a href="#">Deep Drop Down 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Drop Down 2</a></li>
-                  <li><a href="#">Drop Down 3</a></li>
-                  <li><a href="#">Drop Down 4</a></li>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand heading-black" href="index.html">
+                <img src="img/logo2.png" width="200">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span data-feather="grid"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#solutions">Solutions</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link page-scroll" href="#faq">About</a>
+                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll d-flex flex-row align-items-center text-primary" href="#demo-section">
+                            <em data-feather="layout" width="18" height="18" class="mr-2"></em>
+                            Request Demo
+                        </a>
+                    </li>
                 </ul>
-              </li>-->
-              <!--<li><a href="#faq">FAQs</a></li>-->
-              <li><a href="#contact">Contact</a></li>
-
-            </ul>
-          </nav><!-- .nav-menu -->
-
-          <!--<a href="https://35.225.176.254:8000" class="get-started-btn">Live Demo</a>-->
-        </div>
-      </div>
-
+            </div>
+        </nav>
     </div>
-  </header><!-- End Header -->
+</section>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container-fluid" data-aos="fade-up">
-      <div class="row justify-content-center">
-        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>Video Intelligence for Enterprise Quality Control</h1>
-          <!-- <h1>Secure Communities with OurEye.ai</h1> -->
-          <h2>Automatically manage day to day Operations with OurEye.ai</h2>
-          <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
-        </div>
-        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
-
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-            <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3>What is OurEye.ai?</h3>
-            <p class="font-italic">
-              OurEye.ai is an Artificial Intelligence & Computer Vision powered video intelligence solution for enterprises to monitor Standard Operating Procedures and any other custom guidelines which could be monitored through the camera and ensure quality control and accelerate real-time taken from decision to action. </p>
-            <ul>
-              <li><i class="icofont-bullseye"></i> OurEye.ai is completely automated and requires minimal human intervention.</li>
-              <li><i class="icofont-bullseye"></i> Leveraging pre-existing CCTV-IP Infrastructure, OurEye.ai automatically monitors your SOPs</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row pt-5 align-items-center">
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="150">
-            <img src="assets/img/about-1.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>What does OurEye.ai Provide?</h3>
-            <p class="font-italic">
-              OurEye.ai provides Enterprise Quality Control and automated SOP monitoring with lots of different added functionalities
-            </p>
-            <ul>
-              <li><i class="icofont-bullseye"></i><b>Eaisly Adaptable:</b> Integrateable with Existing CCTV Setup or Install New CCTV Infrastructure with OurEye.ai</li>
-              <li><i class="icofont-bullseye"></i><b>Daily Insights:</b> Get Insights of what is happening on your Workplace.</li>
-              <li><i class="icofont-bullseye"></i><b>Dashboard View:</b> Insightful Dashboard for your Entire Operations</li>
-              <li><i class="icofont-bullseye"></i><b>Real-Time Notifications:</b> Customisable real-time notifications for any compromise in Quality Control or Security Breach </li>
-              <li><i class="icofont-bullseye"></i><b>One-Shot Model Training:</b> On-Board New Employees into the system with just 2-3 images of them</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <!--<section id="counts" class="counts">
-      <div class="container">
-
-        <div class="row counters">
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">232</span>
-            <p>Clients</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">521</span>
-            <p>Projects</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">1,463</span>
-            <p>Hours Of Support</p>
-          </div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">15</span>
-            <p>Hard Workers</p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- End Counts Section -->
-
-    <!-- ======= Services Section ======= -->
-    <!--<section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bx bxl-dribbble"></i>
-              </div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bx-file"></i>
-              </div>
-              <h4><a href="">Sed Perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
-              </div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bx bx-layer"></i>
-              </div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bx bx-slideshow"></i>
-              </div>
-              <h4><a href="">Dele Cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bx bx-arch"></i>
-              </div>
-              <h4><a href="">Divera Don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- End Services Section -->
-    
-    <!-- ======= Demo Section ======= -->
-    <section id="demo" class="demo">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Demo</h2>
-          <!--<p></p>-->
-        </div>
-
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6">
-              <img src="assets/img/construction.gif" alt="Helmet" style="width:100%">
-              <h4 style="text-align: center; padding: 10px;">Factory and Construction</h4>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <img src="assets/img/bbk_footage.gif" alt="Face Mask" style="width:100%">
-              <h4 style="text-align: center; padding: 10px;">Cloud Kitchen</h4>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <img src="assets/img/factory.gif" alt="Object Detection" style="width:100%">
-              <h4 style="text-align: center; padding: 10px;">Factory</h4>
-            </div>
-        </div>
-        
-        <br><br><br><br>
-            
-        <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6">
-              <img src="assets/img/helmet.gif" alt="Helmet" style="width:100%">
-              <h4 style="text-align: center; padding: 10px;">PPE Helmet Detection</h4>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <img src="assets/img/face_mask.gif" alt="Face Mask" style="width:100%">
-              <h4 style="text-align: center; padding: 10px;">Face Mask Detection</h4>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <img src="assets/img/object_detection.gif" alt="Object Detection" style="width:100%">
-              <h4 style="text-align: center; padding: 10px;">Object Detection</h4>
-            </div>
-        </div>
-        
-        <!--
-        <div class="row text-center justify-content-center">
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-            <p style="margin-top: 50px; font-size: 20px; margin-bottom: 25px">Please checkout our Live Prototype Demo</p>
-             <a href="https://35.225.176.254:8000" class="demo-btn">Live Demo</a>
-          </div>
-        </div>
-        -->
-      </div>
-    </section>
-    <!-- End Demo Section-->
-
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Features</h2>
-          <p>One Dashboard or Mobile App to automatically monitor complete day to day Operations</p>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bxs-check-shield"></i>
-              <h4>Automated SOPs Monitoring</h4>
-              <p>Instant Notifications & Alerts in case of any compromise on SOPs like compromise of hygiene protocols etc.</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bxs-time-five"></i>
-              <h4>Real-Time Logging</h4>
-              <p>Identification of known/unknown person and check whether person is authorized acess to be there.</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bxs-cog"></i>
-              <h4>One-Shot Model Training</h4>
-              <p>Registration of people with One-Shot Learning Technique. Perform continuous training to improve the model.</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bxs-cctv"></i>
-              <h4>Employee Attendance</h4>
-              <p>Automated Face-Recognition based Employee Attendance and tracking. Find your Employee in the workplace instantly though our dahboard</p>
-            </div>
-          </div>
-          <div class="image col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <img src="assets/img/features.png" alt="" class="img-fluid">
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Features Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <!--<section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="owl-carousel testimonials-carousel">
-
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-          </div>
-
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-          </div>
-
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-          </div>
-
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-          </div>
-
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- End Testimonials Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <!--<section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-              </div>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- End Portfolio Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <!--<section id="pricing" class="pricing section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>--><!-- End Pricing Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Team</h2>
-          <p class="text-justify">Together prior to getting started on this we created India's first research lab and won a QS Award beating Harvard and MIT. 
-            We have experiences ranging from University of California - Berkeley, CitiGroup and various other startups. We have also been sponsored invitees 
-            to global events such as TechCrunch Berlin, SLUSH Helsinki, Tensorflow Dev Summit and speaker invitee at Google Developer Group - San Francisco, 
-            PyCon Taiwan and various other places. Together we have also won over $15,000 in AI and IOT Hackathons together around the world.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member" data-aos="zoom-in">
-              <div class="pic"><img src="assets/img/team/team-1.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sourav Sanyal</h4>
-                <span>Co-Founder</span>
-                <div class="social">
-                  <a href="mailto:sourav@oureye.ai"><i class="icofont-email"></i></a>
-                  <a href="https://www.linkedin.com/in/sourav-s/"><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-lg-3 col-md-6">
-            <div class="member" data-aos="zoom-in">
-              <div class="pic"><img src="assets/img/team/team-2.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Agniswar Paul</h4>
-                <span>Co-Founder</span>
-                <div class="social">
-                  <a href="mailto:agniswar@oureye.ai"><i class="icofont-email"></i></a>
-                  <a href="https://www.linkedin.com/in/agniswar-paul/"><i class="icofont-linkedin"></i></a>
-                  <a href="https://twitter.com/agniswar489"><i class="icofont-twitter"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-lg-3 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-3.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Saurabh Ghanekar</h4>
-                <span>Co-Founder</span>
-                <div class="social">
-                  <a href="mailto:saurabh@oureye.ai"><i class="icofont-email"></i></a>
-                  <a href="https://www.linkedin.com/in/saurabhghanekar/"><i class="icofont-linkedin"></i></a>
-                  <a href="https://twitter.com/Saurabh98G/"><i class="icofont-twitter"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-lg-3 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-4.png" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Miran Junaidi</h4>
-                <span>Co-Founder</span>
-                <div class="social">
-                  <a href="mailto:miranjunaidi@oureye.ai"><i class="icofont-email"></i></a>
-                  <a href="https://www.linkedin.com/in/miran-junaidi-02a10014b/"><i class="icofont-linkedin"></i></a>
-                  <a href="https://twitter.com/mthjunaidi"><i class="icofont-twitter"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <!--<section id="faq" class="faq">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-1" class="collapsed">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse" data-parent=".faq-list">
-                <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
-                <p>
-                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
-                <p>
-                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
-                <p>
-                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
-                <p>
-                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
-                </p>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-    </section>--><!-- End Frequently Asked Questions Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <!-- <section id="contact" class="contact section-bg">
-      <div class="container">
-
-        <div class="section-title text-center" data-aos="fade-up">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/contact-us.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-8 mt-5 pt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-            <form name="gform" id="gform" enctype="text/plain" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLScwa_QGsjQ_9dxOgx_50IFHbgRKvdFS9qGYA0dblo11Ctan5g/formResponse?" onsubmit="submitted=true;" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="entry.13857192" class="form-control" id="entry.13857192" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="entry.254599107" id="entry.254599107" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="entry.612964844" id="entry.612964844" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="entry.761986280" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              </div>
-              <div class="text-center">
-                <button type="submit" value="Submit">Send Message</button>
-              </div>
-            </form>
-
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-            <script src="assets/vendor/jquery/jquery.min.js"></script>
-            <script type="text/javascript">var submitted=false;</script>
-            <script type="text/javascript">
-            $('#gform').on('submit', function(e) {
-              $('#gform *').fadeOut(2000);
-              $('#gform').prepend('Your message has been sent. Thank you!').css({'text-align': 'center', 'padding': '0 0 0 60px', 'font-size': '22px', 'font-weight': '600', 'margin-bottom': '5px', 'padding-top': '25px', 'color': '#010483'});});
-            </script>
-          </div>
-        </div>
-      </div>
-    </section>End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-5 footer-contact">
-            <h3>OurEye.ai</h3>
-            <p>
-              Bangalore, Karnataka <br>
-              India <br><br>
-              <strong>Email:</strong> hello@hyperform.tech<br>
-            </p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#home">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="privacy-policy.html" target="_blank">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-5 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>For latest updates, subscribe to our newsletter</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
+<!--hero header-->
+<section class="py-7 py-md-0 bg-hero" id="home" style="background-image: url('img/sampleimagebg.png');">
     <div class="container">
-
-      <div class="copyright-wrap py-4">
-        <div class="mr-md-auto text-center text-md-center">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Hyperform Technology</span></strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
+        <div class="row vh-md-100">
+            <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+                <h1 class="heading-black text-capitalize">Video Intelligence for Enterprise Quality Control</h1>
+                <p class="lead py-3">OurEye.ai is an automated, end-to-end video intelligence solution for Enterprises to monitor Standard Operating Procedures, leveraging pre-existing CCTV-IP infrastructure.</p>
+                <a class="page-scroll" href="#features"><button class="btn btn-primary d-inline-flex flex-row align-items-center">
+                    Learn more
+                    <em class="ml-2" data-feather="arrow-right"></em>
+                </button></a>
+            </div>
         </div>
-      </div>
-
     </div>
-  </footer><!-- End Footer -->
+</section>
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <div id="preloader"></div>
+<!-- features section -->
+<section class="pt-6 pb-7" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+                <h2 class="heading-black">Automatic, Intelligent, and available Round-the-clock</h2>
+                <p class="text-muted lead">OurEye.ai continuously observes, monitors, and analyzes workplace activity, to provide comprehensive metrics that promote remote auditing, and drive top quality at all times. Requires near-zero human intervention or action.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 mx-auto">
+                <div class="row feature-boxes">
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-primary">
+                            <div class="icon-box-inner">
+                                <span data-feather="edit-3" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>Day to day insights</h5>
+                        <p class="text-muted">Get daily insights on your team's activity, employee-wise performance, and the standard of hygiene and quality maintained in the location.</p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-success">
+                            <div class="icon-box-inner">
+                                <span data-feather="monitor" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>Consolidated Dashboard and Metrics</h5>
+                        <p class="text-muted">Observe employees, monitor activity, take actions, onboard recruits and more in real-time, within seconds, from a streamlined dashboard.</p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-danger">
+                            <div class="icon-box-inner">
+                                <span data-feather="layout" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>Rapid Integration and Scaling</h5>
+                        <p class="text-muted">Compatible with most existing CCTV setups. Use your current setup, or install new infrastructure directly managed by us.</p>
+                    </div>
+                    <div class="col-md-6 box">
+                        <div class="icon-box box-info">
+                            <div class="icon-box-inner">
+                                <span data-feather="globe" width="35" height="35"></span>
+                            </div>
+                        </div>
+                        <h5>Real-time notifications and alerts</h5>
+                        <p class="text-muted">Get customizable, real-time notifications for security breaches, SOP violations and more, detected and triggered automatically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-6 text-center">
+            <div class="col-md-6">
+                <h2>Experience the future of enterprise quality</h2>
+                <p class="mb-5">OurEye.ai uses cutting edge <i>One-Shot</i> Model Training to reduce loading, onboarding and processing times to fractions, enabling lightning fast response times and minimizing errors.</p>
+                <a href="#demo-section" class="btn btn-primary page-scroll">
+                    Request a demo
+                </a>
+            </div>
+            <div class="col-md-6" style="padding-top: 30px;">
+                <video class="embed-responsive" autoplay preload loop muted src="img/blog-video.mp4">
+                	
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+<!--pricing section-->
+<section class="py-7 bg-dark section-angle top-right bottom-right" id="solutions">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="text-white heading-black">Serving everyone</h2>
+                <p class="text-light lead">OurEye.Ai currently caters to the following sectors</p>
+            </div>
+        </div>
+        <!--pricing tables-->
+        <div class="row pt-5 pricing-table">
+            <div class="col-12 mx-auto">
+                <div class="card-deck pricing-table">
+                    <div class="card">
+                        <div class="card-body">
+                            <h1 class="card-title text-primary mb-0 pt-4">Food and Beverage</h1>
+                            <div class="text-muted font-weight-light mt-2">Cloud Kitchens, Restaurants, Joints and more!</div>
+                            <br>
+                            <ul class="list-unstyled pricing-list">
+                            	<li>Standardized, Cross-outlet Hygiene Index</li>
+                                <li style="font-size: 105%; color: #66ffff;"><b>FSSAI Hygiene Compliance</b></li>
+                                <li>Gear tracking (Chef Hats, Aprons and more)</li>
+                                <li>Kitchen activity metrics</li>
+                                <li>Automated SOP monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                        	<div class="ribbon"><span>Upcoming</span></div>
+                            <!--<h3 class="card-title pt-3">Agency</h1>-->
+                            <h1 class="card-title text-info mb-0 pt-4">Industry</h1>
+                            <div class="text-muted font-weight-light mt-2">Factories, manufacturing units, construction sites and more!</div>
+                            <br>
+                            <ul class="list-unstyled pricing-list">
+                                <li>Apparel tracking (PPE kits, Uniforms and more)</li>
+                                <li>Entry - Exit tracking</li>
+                                <li>Vehicle/Machinery monitoring</li>
+                                <li>Gear Tracking (Helmets, Gloves and more)</li>
+                                <li>Safety Hazards monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-6">
+            <div class="col-md-4 mr-auto text-center">
+                <h3>The perfect solution.</h3>
+                <p class="lead">
+                    OurEye is packed to the brim with innovative technologies and cutting-edge features.
+                </p>
+                <br>
+            </div>
+            <div class="col-md-7 offset-md-1">
+                <ul class="features-list">
+                    <li>OneShot model training</li>
+                    <li>Person detection</li>
+                    <li>Custom object detection</li>
+                    <li>Custom SOP detection</li>
+                    <li>Live admin dashboard</li>
+                    <li>Activity tracking</li>
+                    <li>Automated attendance</li>
+                    <li>CRON compatibility</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5" id="demo-section">
+            <div class="col-md-8 col-12 divider top-divider mx-auto pt-5 text-center">
+            	<br><br><br><br>
+                <h3>Request a demonstration</h3>
+                <p class="mb-4">To schedule a full product demonstration of OurEye, or to get in touch for customized solutions, please click below.</p>
+                <!--<button class="btn btn-primary">
+                    Create your account
+                </button>-->
+                <a class="typeform-share button" href="https://form.typeform.com/to/tQDOdexu" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#38BA5E;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:19px;line-height:47.5px;text-align:center;margin:0;height:47.5px;padding:0px 31px;border-radius:11px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="5" target="_blank">Request Demo </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                <br><br><br><br>
+            </div>
+        </div>
+    </div>
+</section>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!--faq section-->
+<!--
+<section class="py-7" id="faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2>Frequently asked questions</h2>
+                <p class="text-muted lead">Answers to most common questions.</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 mx-auto">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h6>Can I try it for free?</h6>
+                        <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h6>Do you have hidden fees?</h6>
+                        <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h6>What are the payment methods you accept?</h6>
+                        <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h6>How often do you release updates?</h6>
+                        <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h6>What is your refund policy?</h6>
+                        <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h6>How can I contact you?</h6>
+                        <p class="text-muted">Nam liber tempor cum soluta nobis eleifend option congue nihil imper per tem por legere me doming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 mx-auto text-center">
+                <h5 class="mb-4">Have questions?</h5>
+                <a href="#" class="btn btn-primary">Contact us</a>
+            </div>
+        </div>
+    </div>
+</section>
+-->
 
+<!--news section-->
+<!--
+<section class="py-7 bg-dark section-angle top-left bottom-left" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="heading-black">Team</h2>
+                <p class="text-muted lead">Meet the minds behind OurEye</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-raised" src="img/blog-1.jpg" alt="Blog 1">
+                    </a>
+                    <div class="card-body">
+                        <a href="#" class="card-title mb-2"><h5>We launch new iOS & Android mobile apps</h5></a>
+                        <p class="text-muted small-xl mb-2">Sep 27, 2018</p>
+                        <p class="card-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imper,
+                            consectetur adipiscing elit. <a href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-raised" src="img/blog-2.jpg" alt="Blog 2">
+                    </a>
+                    <div class="card-body">
+                        <a href="#" class="card-title mb-2"><h5>New update is available for the editor</h5></a>
+                        <p class="text-muted small-xl mb-2">August 16, 2018</p>
+                        <p class="card-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imper,
+                            consectetur adipiscing elit. <a href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-raised" src="img/blog-3.jpg" alt="Blog 3">
+                    </a>
+                    <div class="card-body">
+                        <a href="#" class="card-title mb-2"><h5>The story of building #1 page builder</h5></a>
+                        <p class="text-muted small-xl mb-2">December 2nd, 2017</p>
+                        <p class="card-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imper,
+                            consectetur adipiscing elit. <a href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-raised" src="img/blog-3.jpg" alt="Blog 3">
+                    </a>
+                    <div class="card-body">
+                        <a href="#" class="card-title mb-2"><h5>The story of building #1 page builder</h5></a>
+                        <p class="text-muted small-xl mb-2">December 2nd, 2017</p>
+                        <p class="card-text">Nam liber tempor cum soluta nobis eleifend option congue nihil imper,
+                            consectetur adipiscing elit. <a href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+
+<section class="py-7" id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2 class="text-white heading-black">Team</h2>
+                <p class="text-light lead">Meet the minds behind OurEye.Ai</p>
+            </div>
+        </div>
+        <!--pricing tables-->
+        <div class="row pt-5 pricing-table">
+            <div class="col-12 mx-auto">
+                <div class="card-deck pricing-table">
+                    <div class="card">
+                        <div class="card-body">
+                        	<div class="circular--portrait">
+  								<img src="img/sourav.png" />
+							</div>
+							<h5 class="card-title pt-3">Sourav Sanyal</h5>
+                            <!--<h1 class="card-title text-primary mb-0 pt-4">Food and Beverage</h1>-->
+                            <a href="https://www.linkedin.com/in/sourav-s/"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+                            <a href="mailto:sourav@oureye.ai"><i class="fa fa-envelope-square" style="font-size:36px; padding-left: 10px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                        	<div class="circular--portrait">
+  								<img src="img/agniswar.png" />
+							</div>
+							<h5 class="card-title pt-3">Agniswar Paul</h5>
+                            <!--<h3 class="card-title pt-3">Agency</h3>-->
+                            <a href="https://www.linkedin.com/in/agniswar-paul/"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+                            <a href="mailto:agniswar@oureye.ai"><i class="fa fa-envelope-square" style="font-size:36px; padding-left: 10px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                        	<div class="circular--portrait">
+  								<img src="img/saurabh.png" />
+							</div>
+                            <!--<h3 class="card-title pt-3">Agency</h1>-->
+                            <h5 class="card-title pt-3">Saurabh Ghanekar</h5>
+                            <a href="https://www.linkedin.com/in/saurabhghanekar/"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+                            <a href="mailto:saurabh@oureye.ai"><i class="fa fa-envelope-square" style="font-size:36px; padding-left: 10px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                        	<div class="circular--portrait">
+  								<img src="img/miran.png" />
+							</div>
+                            <!--<h3 class="card-title pt-3">Agency</h1>-->
+                            <h5 class="card-title pt-3">Miran Junaidi</h5>
+                            <a href="https://www.linkedin.com/in/miran-junaidi-02a10014b/"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+                            <a href="mailto:miranjunaidi@oureye.ai"><i class="fa fa-envelope-square" style="font-size:36px; padding-left: 10px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--footer-->
+<footer class="py-6 bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 mx-auto my-auto text-center">
+                <h4>OurEye.Ai</h4>
+                <p class="text-muted"><i>Bangalore, India<br>Pincode: 560068</i><br><br>hello@oureye.ai</p>
+                <!--<ul class="list-inline social social-sm">
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href=""><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>-->
+            </div>
+            <!--<div class="col-sm-2">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Partner</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Refer a friend</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h5>Help</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Log in</a></li>
+                </ul>
+            </div>-->
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 text-muted text-center small-xl">
+                &copy; 2020 Hyperform - All Rights Reserved
+            </div>
+        </div>
+        <!-- Template was accessed on ‎Wednesday, ‎September ‎9, ‎2020, ‏‎9:57:49 PM, via webresourcesdepot.com -->
+        <!-- Availed under creative commons license, and used in accordance to the Fair Use policy. -->
+    </div>
+</footer>
+
+<!--scroll to top-->
+<div class="scroll-top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+
+<!-- theme switcher (FOR DEMO ONLY - REMOVE FROM PRODUCTION)-->
+<!--<div class="switcher-wrap">
+    <div class="switcher-trigger">
+        <span class="fa fa-gear"></span>
+    </div>
+    <div class="color-switcher">
+        <h6>Color Switcher</h6>
+        <ul class="mt-3 clearfix">
+            <li class="bg-teal active" data-color="default" title="Default Teal"></li>
+            <li class="bg-purple" data-color="purple" title="Purple"></li>
+            <li class="bg-blue" data-color="blue" title="Blue"></li>
+            <li class="bg-red" data-color="red" title="Red"></li>
+            <li class="bg-green" data-color="green" title="Green"></li>
+            <li class="bg-indigo" data-color="indigo" title="Indigo"></li>
+            <li class="bg-orange" data-color="orange" title="Orange"></li>
+            <li class="bg-cyan" data-color="cyan" title="Cyan"></li>
+            <li class="bg-yellow" data-color="yellow" title="Yellow"></li>
+            <li class="bg-pink" data-color="pink" title="Pink"></li>
+        </ul>
+        <p>These are just demo colors. You can <b>easily</b> create your own color scheme.</p>
+    </div>
+</div>-->
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
-
 </html>
