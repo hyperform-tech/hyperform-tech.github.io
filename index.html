@@ -236,7 +236,11 @@
                 <!-- <button class="btn btn-primary">
                     Create your account
                 </button> -->
-                <a class="typeform-share button" href="https://form.typeform.com/to/TgxztpeO" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#2EAF65;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:12px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-footer="true" target="_blank">Request Demo </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                <a 
+                href="javascript:form()" 
+                style="display:inline-block;text-decoration:none;background-color:#2EAF65;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:12px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;">
+                    Request Demo </a>
+                
                 <br><br><br><br>
             </div>
         </div>
@@ -533,5 +537,55 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="js/scripts.js"></script>
+
+<script src="https://embed.typeform.com/embed.js" type="text/javascript"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAGaP5MhPIq6N0iicyG9XQribFkdjp5QzY",
+    authDomain: "oureye-website-2.firebaseapp.com",
+    projectId: "oureye-website-2",
+    storageBucket: "oureye-website-2.appspot.com",
+    messagingSenderId: "370212285910",
+    appId: "1:370212285910:web:3a852ac22ce6ce377bc877",
+    measurementId: "G-YDBXZSXM0Z"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const analytics = firebase.analytics();
+</script>
+
+<script>
+const reference = typeformEmbed.makePopup(
+  'https://form.typeform.com/to/TgxztpeO',
+  {
+    mode: 'popup',
+    autoClose: 3000,
+    hideHeaders: true,
+    hideFooters: true,
+    onSubmit: function () {
+      console.log('Typeform successfully submitted')
+    }
+  }
+)
+    const form = () => {
+        analytics.logEvent('Request a demo', {
+            content_type: 'image',
+            content_id: 'P12453',
+            items: [{ name: 'Kittens' }]
+        });
+        reference.open()
+    }
+</script>
+
 </body>
 </html>
